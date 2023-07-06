@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Article</title>
+    <meta charset="utf-8">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/article.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    {{ content|safe }}
+  </body>
+</html>
