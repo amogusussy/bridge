@@ -3,3 +3,13 @@ body {
   max-width: 1200px;
   padding: 20px;
 }
+
+hr {
+  color: var(--grey);
+}
+
+pre {
+  background: var(--second-bg);
+  padding: 5px;
+  border-radius: 5px;
+}
