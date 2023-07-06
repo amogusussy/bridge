@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Bridge</h1>
+    <form action="/post" method="post">
+      <input type="text" name="url" placeholder="Enter URL..." autofocus autocomplete="off">
+      <button type="submit">Enter</button>
+    </form>
+    <div id="bottom">
+      <a href="https://github.com/amogusussy/proxy_article">Source</a>
+      <a href="/about">About</a>
+    </div>
+  </body>
+</html>
