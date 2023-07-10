@@ -25,6 +25,8 @@ def post():
             message="You didn't input a url."
         )
 
+    print(helpers.valid_url(url))
+
     return render_template(
         "proxy.html",
         content=proxy.proxy_url(
