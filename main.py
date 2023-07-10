@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import config
 from src import proxy, helpers
 from flask import (
