@@ -1,5 +1,5 @@
 import config
-from src import proxy
+from src import proxy, helpers
 from flask import (
     Flask,
     request,
@@ -27,7 +27,9 @@ def post():
 
     return render_template(
         "proxy.html",
-        content=proxy.proxy_url(url)
+        content=proxy.proxy_url(
+            helpers.valid_url(url)
+        )
     )
 
 
